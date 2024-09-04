@@ -1,0 +1,13 @@
+\documentclass{article}
+\begin{document}
+$$\vec{\nabla} \cdot (f \vec{A}) = f(\vec{\nabla} \cdot \vec{A}) + \vec{A} \cdot (\vec{\nabla} f)$$
+Since
+$$\int_{V} (\vec{\nabla} \cdot \vec{A}) \, d \tau = \oint_{S} \vec{A} \cdot \, d\vec{a}$$
+We can insert a $d \tau$ into the first equation to get the relation shown above to appear in the original equation. By doing do, we can replace the integral in that spot with a different form and solve for one of the remaining parts to integrate. Thus,
+$$\int_{V} \vec{\nabla} \cdot (f \vec{A}) \, d \tau = \int_{V} (f(\vec{\nabla} \cdot \vec{A}) + \vec{A} \cdot (\vec{\nabla} f)) \, d \tau$$
+Using
+$$\int_{a}^{b} u \, dv = u |_{a}^{b} v |_{a}^{b} - \int_{a}^{b} v \, du$$
+We can express the integration by parts equation as
+$$\int_{V} \vec{\nabla} \cdot (f \vec{A}) \, d \tau = \int_{V} f(\vec{\nabla} \cdot \vec{A}) \, d \tau + \int_{V} \vec{A} \cdot (\vec{\nabla} f) \, d \tau$$
+$$\oint_{S} (f \vec{A}) \cdot \, d \vec{a} = \int_{V} \vec{\nabla} \cdot (f \vec{A}) \, d \tau - \int_{V} \vec{A} \cdot (\vec{\nabla} f) \, d \tau$$
+\end{document}
